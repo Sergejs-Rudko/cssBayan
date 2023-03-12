@@ -129,7 +129,7 @@ h2 a {
 
 @media screen and (max-width: 820px) {
     body {
-        background: url("./assets/bcg.jpg") no-repeat 10% 60%;;
+        background: url("./assets/bcg.jpg") no-repeat 5% 5%;
         background-size: initial;
     }
 
@@ -185,6 +185,11 @@ h2 a {
         width: 28rem;
     }
 
+    .accordion-item:focus .item__body {
+        width: 24rem;
+        height: 24rem;
+    }
+
     .item__head {
         font-size: 1.4rem;
     }
@@ -192,5 +197,12 @@ h2 a {
     .icon {
         opacity: 100;
         width: 1.4rem;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    body {
+        background: url("./assets/bcg.jpg") repeat;
+        background-size: cover;
     }
 }
