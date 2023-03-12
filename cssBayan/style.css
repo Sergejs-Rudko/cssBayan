@@ -51,25 +51,12 @@ h2 a {
     width: 82rem;
 }
 
-.accordion:hover .item__head {
-    color: black;
-}
-
-.accordion:hover .icon {
-    opacity: 100;
-}
-
 .accordion ul {
     list-style: none;
 }
 
 .accordion-item {
     padding-bottom: 1rem;
-}
-
-.accordion-item:hover .item__body {
-    width: 28rem;
-    height: 28rem;
 }
 
 .accordion-item:focus .item__body {
@@ -79,14 +66,6 @@ h2 a {
 
 .accordion-item:focus .icon {
     transform: rotate(45deg);
-}
-
-.accordion-item:hover .icon {
-    transform: rotate(45deg);
-}
-
-.accordion-item:hover {
-    cursor: pointer;
 }
 
 .item__head {
@@ -123,4 +102,27 @@ h2 a {
 
 #fourth-meme {
     background-image: url("./assets/mem4.jpg");
+}
+
+@media (hover: hover) {
+    .accordion:hover .item__head {
+        color: black;
+    }
+
+    .accordion-item:hover .item__body {
+        width: 28rem;
+        height: 28rem;
+    }
+
+    .accordion-item:hover {
+        cursor: pointer;
+    }
+
+    .accordion:hover .icon {
+        opacity: 100;
+    }
+
+    .accordion-item:hover .icon {
+        transform: rotate(45deg);
+    }
 }
