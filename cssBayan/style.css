@@ -7,9 +7,82 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 }
 
 * {
-    transition: all 0.5s;
+    transition: all 0.3s;
+    box-sizing: border-box;
 }
 
-html{
+html {
     font-size: 10px;
+    font-family: 'Trebuchet MS';
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 4rem;
+    border: 0.1rem solid green;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+h2 a {
+    text-decoration: none;
+    color: tomato;
+}
+
+
+.accordion {
+    padding: 1rem;
+    color: blueviolet;
+    border: 0.1rem solid red;
+    font-size: 3rem;
+    width: 82rem;
+}
+
+.accordion:hover .item__head {
+    color: black;
+}
+
+.accordion ul {
+    list-style: none;
+}
+
+.item__head{
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon{
+    width: 3rem;
+    background: url("./assets/plus.svg") no-repeat top left;
+}
+
+.item__body {
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+}
+
+#first-meme {
+    background-image: url("./assets/mem1.jpg");
+}
+
+#second-meme {
+    background-image: url("./assets/mem2.jpg");
+}
+
+#third-meme {
+    background-image: url("./assets/mem3.jpg");
+}
+
+#fourth-meme {
+    background-image: url("./assets/mem4.jpg");
 }
