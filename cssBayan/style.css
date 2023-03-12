@@ -21,7 +21,7 @@ body {
     flex-direction: column;
     align-items: center;
     background: url("./assets/bcg.jpg") no-repeat;
-    background-size: cover;
+    background-size: auto;
 }
 
 h1 {
@@ -127,17 +127,20 @@ h2 a {
     }
 }
 
-@media screen and (max-width: 820px){
-    body{
-        background: url("./assets/bcg.jpg") no-repeat;
-        background-size: auto;
+@media screen and (max-width: 820px) {
+    body {
+        background: url("./assets/bcg.jpg") no-repeat 10% 60%;;
+        background-size: initial;
     }
-    h1{
+
+    h1 {
         font-size: 3.5rem;
     }
-    h2{
+
+    h2 {
         font-size: 2.5rem;
     }
+
     .accordion {
         padding: 2rem;
         color: white;
@@ -147,11 +150,47 @@ h2 a {
         font-size: 3rem;
         width: 50rem;
     }
-    .item__head{
+
+    .item__head {
         font-size: 2rem;
     }
-    .icon{
+
+    .icon {
         opacity: 100;
         width: 2rem;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    body {
+        background: url("./assets/bcg.jpg") no-repeat 10% 60%;;
+        background-size: initial;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .accordion {
+        padding: 2rem;
+        color: white;
+        border: 0.1rem solid #147efb;
+        background-color: #147efb;
+        border-radius: 2rem;
+        font-size: 1rem;
+        width: 28rem;
+    }
+
+    .item__head {
+        font-size: 1.4rem;
+    }
+
+    .icon {
+        opacity: 100;
+        width: 1.4rem;
     }
 }
